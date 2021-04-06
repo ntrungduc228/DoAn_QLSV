@@ -1,0 +1,88 @@
+﻿  main.cpp
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\myLib.h(63,14): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\myLib.h(63,20): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\myLib.h(92,26): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\myLib.h(92,29): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\validate.h(27,58): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\validate.h(119,109): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\validate.h(187,44): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\validate.h(244,85): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\validate.h(308,72): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\validate.h(368,94): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\validate.h(426,104): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\view.h(502,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\view.h(965,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\view.h(969,25): warning C4309: '=': truncation of constant value
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\view.h(964,9): warning C4101: 'kiTu': unreferenced local variable
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(329,25): warning C4390: ';': empty controlled statement found; is this the intent?
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(752,12): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(764,59): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(766,59): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(784,12): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(871,14): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(878,14): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(887,14): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(893,14): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(1374,12): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(1385,59): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(1387,12): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(1389,46): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(1391,93): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(1402,13): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(1489,15): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(1496,15): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(1505,15): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(1511,15): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(1605,12): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(1607,58): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(1609,12): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(1611,46): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(1613,90): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(1925,12): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(1939,59): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(1941,59): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(1962,12): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(2051,13): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(2058,13): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(2075,13): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(2081,13): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(2267,23): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(2365,12): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(2368,59): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(2371,59): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(2398,13): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(2509,12): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(2512,59): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(2515,59): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(2680,13): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(2827,12): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(2830,59): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(2833,59): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(2869,13): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(2975,12): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(3079,12): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(3083,59): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(3085,59): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(3087,63): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(3169,12): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(3188,15): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(3513,12): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(3524,53): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(3536,12): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(3627,14): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(3634,14): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(3643,14): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(3649,14): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(3994,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(4274,12): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(4287,58): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(4289,58): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(4309,12): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(4393,14): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(4400,14): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(4409,14): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\functions.h(4415,14): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\file.h(74,24): warning C4101: 'temp': unreferenced local variable
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\file.h(155,24): warning C4101: 'temp': unreferenced local variable
+C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\DOAN_QLSV\main.cpp(320,37): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  DOAN_QLSV.vcxproj -> C:\Users\ASUS Vivo\source\repos\DOAN_QLSV\Debug\DOAN_QLSV.exe

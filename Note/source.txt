@@ -1,0 +1,735 @@
+void xuatDSMonHoc(TREE DSMH)
+{
+	/*if (DSMH != NULL)
+	{
+		xuatDSMonHoc(DSMH->pLeft);
+		xuatMonHoc(DSMH->data);
+		xuatDSMonHoc(DSMH->pRight);
+	}*/
+
+	MONHOC* ArrMH = new MONHOC[soLuong_MH];
+	int n = 0;
+	chuyenCaythanhMang_MH(DSMH, ArrMH, n);
+	sapXepTen_MH(ArrMH, n);
+
+	for (int i = 0; i < n; i++)
+	{
+		xuat_MH(ArrMH[i]);
+	}
+	delete[] ArrMH;
+}
+
+void nhapMonHoc(TREE& DSMH)
+{
+	MONHOC MH;
+	cin.ignore();
+	cout << "\nNhap ma mon hoc: ";
+	getline(cin, MH.MAMH); 
+	cout << "\nNhap ten mon hoc: ";
+	getline(cin, MH.TENMH);
+	cout << "\nNhap STCLT: ";
+	cin >> MH.STCLT;
+	cout << "\nNhap STCTH: ";
+	cin >> MH.STCTH;
+
+	them_MH(DSMH, MH);
+	
+}
+
+
+
+void xuat_LTC(LOPTC *LTC)
+{
+	cout << "\nMa lop: " << LTC->MALOPTC;
+	cout << "\nMa MH: " << LTC->MAMH;
+	cout << "\nKhoa: " << LTC->KHOA;
+	cout << "\nHoc ky:" << LTC->HOCKY;
+	cout << "\nNhom: " << LTC->NHOM;
+	cout << "\nSo SV MAX: " << LTC->SVMAX;
+	cout << "\n======================================";
+}
+
+void xuatDS_LTC(LISTLOPTC DSLTC)
+{
+	for (int i = 0; i < DSLTC.n; i++)
+	{
+		xuat_LTC(DSLTC.LopTC[i]);
+	}
+}
+
+/*void nhap_LTC(LISTLOPTC& DSLTC, string MaMH)
+{
+	LOPTC* newLopTC = new LOPTC;
+
+	int maLop=0;
+	do
+	{
+		maLop = taoMaLop_LTC();
+	} while (checkTrungMaLop_LTC(DSLTC, maLop));
+
+	newLopTC->MALOPTC = maLop;
+	newLopTC->MAMH = MaMH;
+
+	cout << "\nNhap khoa: ";
+	cin >> newLopTC->KHOA;
+
+	cout << "\nNhap hoc ky: ";
+	cin >> newLopTC->HOCKY;
+
+	cout << "\nNhap nhom: ";
+	cin >> newLopTC->NHOM;
+
+	cout << "\nNhap so sv max: ";
+	cin >> newLopTC->SVMAX;
+
+	newLopTC->DSDK.pHead = NULL;
+	newLopTC->DSDK.pTail = NULL;
+
+	if (them_LTC(DSLTC, newLopTC))
+	{
+		cout << "\nThem lop TC thanh cong";
+	}
+	else
+	{
+		cout << "\nThem lop TC that bai";
+	}
+
+	
+	
+}*/
+
+
+
+
+
+
+
+void xuat_LSV(LOPSV LOP)
+{
+	cout << "\nMa lop: " << LOP.MALOP;
+	cout << "\nSo luong sv: " << LOP.soLuongSV;
+	cout << "\n======================================";
+}
+
+void xuatDS_LSV(LISTLOP DSLSV)
+{
+	for (int i = 0; i < DSLSV.n; i++)
+	{
+		xuat_LSV(DSLSV.Lop[i]);
+	}
+}
+
+/*void nhap_LSV(LISTLOP &DSLSV)
+{
+	LOPSV LOP;
+	cin.ignore();
+	
+	cout << "\nNhap ten lop: ";
+	getline(cin, LOP.MALOP);
+
+	cout << "\nNhap so luong sv: ";
+	cin >> LOP.soLuongSV;
+
+	LOP.DSSV.pHead = NULL;
+	LOP.DSSV.pTail = NULL;
+
+	if (them_LSV(DSLSV, LOP) == true)
+	{
+		cout << "\nThem lop hoc thanh cong";
+	}
+	else cout << "\nThem lop hoc that bai";
+}
+*/
+/*void nhap_SV(LISTSV &DSSV,LISTLOP &DSLSV,string MALOP)
+{	NODESV* SV = taoNode_SV();
+
+	cout << "\nNhap ma sv: ";
+	getline(cin, SV->data.MASV);
+
+	cout << "\nNhap ho sv: ";
+	getline(cin, SV->data.HO);
+
+	cout << "\nNhap ten sv: ";
+	getline(cin, SV->data.TEN);
+
+	cout << "\nNhap phai sv: ";
+	getline(cin, SV->data.PHAI);
+
+	cout << "\nNhap sdt: ";
+	getline(cin, SV->data.SDT);
+
+	SV->data.MALOP = MALOP;
+
+	int viTriThem = timviTri_SV(DSSV, SV);
+	them_SV(DSSV, SV, viTriThem);
+
+	int viTriLop = timMaLop_LSV(DSLSV, SV->data.MALOP);
+	viTriThem = timviTri_SV(DSLSV.Lop[viTriLop].DSSV, SV);
+	them_SV(DSLSV.Lop[viTriLop].DSSV, SV, viTriThem);
+
+}*/
+
+
+
+void xuat_SV(NODESV *SV)
+{
+	cout << "\nMa sv: " << SV->data.MASV;
+	cout << "\nHo ten: " << SV->data.HO<<" "<<SV->data.TEN;
+	cout << "\nPhai: " << SV->data.PHAI;
+	cout << "\nSDT: " << SV->data.SDT;
+	cout << "\nMa lop: " << SV->data.MALOP;
+	cout << "\n======================================";
+
+}
+
+void xuatDS_SV(LISTSV DSSV)
+{
+	int stt = 0;
+	for (NODESV* k = DSSV.pHead; k != NULL; k = k->pNext)
+	{
+			cout << "\nso stt: " << ++stt;
+			xuat_SV(k);
+		
+	}
+}
+
+
+
+
+
+void dangKy_LTC(LISTLOPTC& DSLTC,string MASV,int MALOP)
+{
+
+	int viTriLop = checkMaLop_LTC(DSLTC, MALOP);
+	if (viTriLop >= 0)
+	{
+		
+		 bool daDangKy= checkDK_LTC(DSLTC, DSLTC.LopTC[viTriLop]->MAMH, MASV);
+		if (daDangKy==FALSE)
+		{
+
+			NODEDK* DK = taoNode_DK();
+			DK->data.MASV = MASV;
+			DK->data.DIEM = 0;
+			int viTriThem = timViTri_DK(DSLTC.LopTC[viTriLop]->DSDK, DK);
+			them_DK(DSLTC.LopTC[viTriLop]->DSDK, DK, viTriThem);
+		}
+		else {
+			cout << "\nDa dang ky mon nay roi";
+		}
+	}
+	else return;
+}
+
+
+
+void xuatDiemSV_DK(NODESV* SV, NODEDK* DK)
+{
+	cout << "\nMa sv: " << SV->data.MASV;
+	cout << "\nHo ten: " << SV->data.HO << " " << SV->data.TEN;
+	cout << "\nDiem mon hoc: " << DK->data.DIEM;
+	cout << "\n======================================";
+}
+
+void xuatDiemDSSV_DK(LISTDK DSDK,LISTSV DSSV,LISTLOPTC DSLTC,TREE DSMH, int viTriLopTC)
+{
+	if (DSDK.pHead != NULL)
+	{
+		int STT = 0;
+		string TENMH="";
+		xuat_LTC(DSLTC.LopTC[viTriLopTC]);
+		tim_MH(DSMH, DSLTC.LopTC[viTriLopTC]->MAMH, TENMH);
+		cout <<"\nTen mon hoc: " <<TENMH << endl;
+
+		for (NODEDK* k = DSDK.pHead; k != NULL; k = k->pNext)
+		{
+			for (NODESV* sv = DSSV.pHead; sv != NULL; sv = sv->pNext)
+			{
+				if (sv->data.MASV == k->data.MASV)
+				{
+					cout <<"\nSTT: "<<++STT;
+					xuatDiemSV_DK(sv, k);
+				}
+			}
+		}
+	}
+	else cout << "\nDS rong";
+}
+
+void nhapDiemDSSV_DK(LISTDK DSDK,LISTLOPTC DSLTC, LISTSV DSSV,int viTriLopTC)
+{
+	if (DSDK.pHead != NULL)
+	{
+		int STT = 0; float diem;
+		xuat_LTC(DSLTC.LopTC[viTriLopTC]);
+
+
+		for (NODEDK* k = DSDK.pHead; k != NULL; k = k->pNext)
+		{
+			for (NODESV* sv = DSSV.pHead; sv != NULL; sv = sv->pNext)
+			{
+				if (sv->data.MASV == k->data.MASV)
+				{
+					cout << "\nMa sv: " << sv->data.MASV;
+					cout << "\nHo ten: " << sv->data.HO << " " << sv->data.TEN;
+					cout << "\nNhap diem mon hoc: "; cin >> diem;
+					cout << "\n======================================";
+					if (k->data.DIEM < diem) k->data.DIEM = diem;
+				}
+			}
+		}
+	}
+	else cout << "\nDS rong";
+}
+
+void xuatDSDiemTB_SV(LISTSV DSSV, LISTLOPTC DSLTC, string MALOP)
+{
+	string MAMH = "";  float diemTB = 0, tongDiem = 0; int soMonHoc = 0;
+	for (NODESV* SV = DSSV.pHead; SV != NULL; SV = SV->pNext)
+	{
+		if (SV->data.MALOP == MALOP)
+		{
+			cout << "\nMa sv: " << SV->data.MASV;
+			cout << "\nHo ten: " << SV->data.HO << " " << SV->data.TEN;
+			for (int i = 0; i < DSLTC.n; i++)
+			{
+				if (MAMH != DSLTC.LopTC[i]->MAMH)
+					for (NODEDK* DK = DSLTC.LopTC[i]->DSDK.pHead; DK != NULL; DK = DK->pNext)
+					{
+						if (DK->data.MASV == SV->data.MASV)
+						{
+							MAMH = DSLTC.LopTC[i]->MAMH;
+							
+							tongDiem += DK->data.DIEM;
+							soMonHoc++;
+
+							break;
+						}
+					}
+			}
+			if(soMonHoc>0) diemTB = tongDiem / (soMonHoc * 1.0);
+			cout << "\nDiem tb: " << diemTB;
+			cout << "\n======================================";
+			diemTB = 0; tongDiem = 0; soMonHoc = 0;
+		}
+	}
+}
+
+void xuatDSDiemTK_SV(LISTSV DSSV, LISTLOPTC DSLTC,string MALOP)
+{
+	string MAMH="";
+	for (NODESV* SV = DSSV.pHead; SV != NULL; SV = SV->pNext)
+	{
+		if (SV->data.MALOP == MALOP)
+		{
+			cout << "\nMa sv: " << SV->data.MASV;
+			cout << "\nHo ten: " << SV->data.HO << " " << SV->data.TEN;
+			for (int i = 0; i < DSLTC.n; i++)
+			{
+				if(MAMH != DSLTC.LopTC[i]->MAMH)
+				for (NODEDK* DK = DSLTC.LopTC[i]->DSDK.pHead; DK != NULL; DK = DK->pNext)
+				{
+					if (DK->data.MASV == SV->data.MASV )
+					{
+						MAMH = DSLTC.LopTC[i]->MAMH;
+						cout << " ma mh: " << MAMH << "  diem: " << DK->data.DIEM;
+						
+						break;
+					}
+				}
+			}
+			cout << "\n======================================";
+		}
+	}
+}
+
+
+void menu(TREE &DSMH,LISTSV &DSSV, LISTLOPTC &DSLTC, LISTLOP& DSLSV)
+{
+	while (true)
+	{
+		system("cls");
+
+		int luaChon;
+		cout << "\n1. Them lop tc (OK)\n";
+		cout << "\n2. Xuat lop tc (OK)\n";
+		cout << "\n3. Xoa lop tc (OK)\n";
+		cout << "\n4. Sua lop tc (Ok)\n";
+		cout << "\n6. Nhap lop hoc (OK)\n";
+		cout << "\n7. Xuat DS lop hoc (OK)\n";
+		cout << "\n9. Them mon hoc (OK)\n";
+		cout << "\n10. Xuat mon hoc (OK)\n";
+		cout << "\n11. Xoa mon hoc (OK)\n";
+		cout << "\n12. Sua mon hoc (OK)\n";
+		cout << "\n15. Load ds lop tc (xong)\n";
+		cout << "\n16. Load ds sv theo thu tu ten(xong)\n";
+		cout << "\n17. Load ds mon hoc (xong)\n";
+		cout << "\n18. Nhap DS 1 lop sv (xong) \n";
+		cout << "\n19. Xuat DS sv (OK)\n";
+		cout << "\n20. Xoa sv (OK)\n";
+		cout << "\n21. Sua sv (xong)\n";
+		cout << "\n22. Dang ky LTC (xong)\n";
+		cout << "\n23. Xuat ds sc LTC (xong)\n";
+		cout << "\n24. load ds dk (xong)\n";
+		cout << "\n25. Nhap diem lop tc (xong)\n";
+		cout << "\n26. Xuat diem mon hoc (xong)\n";
+		cout << "\n27. Bang diem trung binh\n";
+		cout << "\n28. Bang diem tong ket\n";
+		cout << "\n29. Load ds lop hoc (xong)\n";
+
+		cout << "\n0. Thoat chuong trinh\n";
+
+		cout << "\nNhap lua chon: ";
+		cin >> luaChon;
+		switch (luaChon)
+		{
+		case 1:
+		{
+			system("cls");
+			/*loadData_MH(DSMH);
+			string MA;
+			cout << "\nNhap ma mon hoc: ";
+			cin.ignore();
+			getline(cin, MA);
+			nhap_LTC(DSLTC, MA);*/
+			init_View();
+			LOPTC* LTC;
+			LTC = tao_LTC();
+			nhap_LTC(DSLTC, DSMH, LTC, 1);
+			_getch();
+			break;
+		}
+		case 2:
+		{
+			system("cls");
+			/*cout << DSLTC.n << endl;
+			xuatDS_LTC(DSLTC);*/
+			init_View();
+			//sapXep_LTC(DSLTC, DSMH);
+			sapXep_LTC(DSLTC, DSMH);
+			chon_LTC(DSLTC, DSMH,DSLSV, 1);
+
+			break;
+		}
+		case 3:
+		{
+
+			system("cls");
+			/*int maLop;
+			cout << "\nNhap ma lop can xoa: ";
+			cin >> maLop;
+			xoa_LTC(DSLTC, maLop);
+			cout << endl << DSLTC.n;*/
+			init_View();
+			sapXep_LTC(DSLTC, DSMH);
+			chon_LTC(DSLTC, DSMH,DSLSV, 2);
+			system("pause");
+			break;
+		}
+		case 4:
+		{
+			system("cls");
+			/*int maLop;
+			cout << "\nNhap ma lop can sua: ";
+			cin >> maLop;
+			chinhSua_LTC(DSLTC, maLop);*/
+			init_View();
+			sapXep_LTC(DSLTC, DSMH);
+			chon_LTC(DSLTC, DSMH,DSLSV, 3);
+			_getch();
+			break;
+		}
+		case 6:
+		{
+			system("cls");
+			/*nhap_LSV(DSLSV);
+			system("pause");*/
+			init_View();
+			nhap_LSV(DSLSV);
+			_getch();
+			break;
+		}
+		case 7:
+		{
+			system("cls");
+			//xuatDS_LSV(DSLSV);
+			init_View();
+			chon_LSV(DSLSV, DSLTC,DSMH,2);
+			system("pause");
+			break;
+		}
+
+		case 9:
+		{
+			system("cls");
+			init_View();
+			//nhapMonHoc(DSMH);
+			MONHOC MH;
+			MH.STCLT = 0;
+			MH.STCTH = 0;
+			nhap_MH(DSMH, MH, 1);
+			_getch();
+			break;
+		}
+		case 10:
+		{
+			system("cls");
+
+			init_View();
+			/*if (DSMH != NULL)
+				xuatDS_MH(DSMH);
+			else {
+				cout << "\nDS rong";
+				_getch();
+			}*/
+			chon_MH(DSMH, 1);
+			//xuatDSMonHoc(DSMH);
+			//system("pause");
+			//_getch();
+			//hideCursortype();
+			break;
+		}
+		case 11:
+		{
+			system("cls");
+			/*string MA;
+			cout << "\nNhap ma mon hoc can xoa: ";
+			cin.ignore();
+			getline(cin, MA);
+			xoa_MH(DSMH, MA);
+
+			system("pause");*/
+
+			init_View();
+			chon_MH(DSMH, 2);
+			break;
+		}
+		case 12:
+		{
+			system("cls");
+			/*string MA;
+			cout << "\nNhap ma mon hoc can sua: ";
+			cin.ignore();
+			getline(cin, MA);
+			chinhSua_MH(DSMH, MA);*/
+
+
+			init_View();
+			chon_MH(DSMH, 3);
+			_getch();
+			//system("pause");
+			break;
+		}
+		case 15:
+		{
+			loadData_LTC(DSLTC);
+			break;
+		}
+		case 16:
+		{
+			loadData_SV( DSLSV);
+			break;
+		}
+		case 17:
+		{
+			loadData_MH(DSMH);
+			break;
+		}
+		case 18:
+		{
+			system("cls");
+			/*string TENLOP;
+			cout << "\nNhap ten lop: ";
+			cin.ignore();
+			getline(cin, TENLOP);
+			if (timMaLop_LSV(DSLSV, TENLOP) != -1)
+				nhap_SV(DSSV,DSLSV, TENLOP);
+			else cout << "\nKhong tim thay ma lop";
+			*/
+			init_View();
+			chon_LSV(DSLSV,DSLTC, DSMH,1);
+			_getch();
+			break;
+		}
+		case 19:
+		{
+			system("cls");
+			/*string TENLOP;
+			cout << "\nNhap ten lop: ";
+			cin.ignore();
+			getline(cin, TENLOP);
+			int viTriLop = timMaLop_LSV(DSLSV, TENLOP);
+			if ( viTriLop!= -1)
+				xuatDS_SV(DSLSV.Lop[viTriLop].DSSV);
+			else cout << "\nKhong tim thay ma lop";*/
+
+			init_View();
+			chon_LSV(DSLSV,DSLTC, DSMH,2);
+			system("pause");
+			break;
+		}
+		case 20:
+		{
+			system("cls");
+			/*string MASV; cin.ignore();
+			cout << "\nNhap ma sv: ";
+			getline(cin, MASV);
+			xoa_SV(DSSV, MASV);*/
+			init_View();
+			chon_LSV(DSLSV,DSLTC, DSMH,4);
+
+			break;
+		}
+		case 21:
+		{
+			system("cls");
+			/*string MASV; cin.ignore();
+			cout << "\nNhap ma sv: ";
+			getline(cin, MASV);*/
+			//sua_SV(DSSV, MASV);
+			init_View();
+			chon_LSV(DSLSV,DSLTC,DSMH, 3);
+			_getch();
+			break;
+		}
+		case 22:
+		{
+			system("cls");
+			/*string MA; int maLop; cin.ignore();
+			cout << "\nNhap ma sv: ";
+			getline(cin, MA);
+			int tim = tim_SV(DSSV, MA);
+			if (tim != -1)
+			{
+				cout << "\nNhap ma lop ltc:";
+				cin >> maLop;
+
+				dangKy_LTC(DSLTC, MA, maLop);
+			}
+			else cout << "\nKhong tim thay ma sv";
+			system("pause");*/
+			init_View();
+			sapXep_LTC(DSLTC, DSMH);
+			dangKyLTC_SV(DSLTC,DSMH,DSLSV);
+			_getch();
+			break;
+		}
+		case 23:
+		{
+			system("cls");
+			/*int maLop;
+			cout << "\nNhap ma lop ltc:";
+			cin >> maLop;
+			int viTriLop = timMaLop_LTC(DSLTC, maLop);
+			if (viTriLop != -1)
+			{
+				xuatDS_DK(DSLTC.LopTC[viTriLop]->DSDK, DSLSV);
+			}
+			else cout << "\nKhong tim thay ma lop";
+			system("pause");*/
+			init_View();
+			sapXep_LTC(DSLTC, DSMH);
+			chon_LTC(DSLTC, DSMH, DSLSV, 4);
+			_getch();
+			break;
+		}
+		case 24:
+		{
+			loadData_DK(DSLTC);
+			break;
+		}
+		case 25:
+		{
+			system("cls");
+			/*int maLop;
+			cout << "\nNhap ma lop ltc:";
+			cin >> maLop;
+			int viTriLop = timMaLop_LTC(DSLTC, maLop);
+			if (viTriLop != -1)
+			{
+				nhapDiemDSSV_DK(DSLTC.LopTC[viTriLop]->DSDK, DSLTC, DSSV, viTriLop);
+			}
+			else cout << "\nKhong tim thay ma lop";
+			system("pause");*/
+			init_View();
+			sapXep_LTC(DSLTC, DSMH);
+			chon_LTC(DSLTC, DSMH, DSLSV, 6);
+			_getch();
+			break;
+		}
+		case 26:
+		{
+			system("cls");
+			/*int maLop;
+			cout << "\nNhap ma lop ltc:";
+			cin >> maLop;
+			int viTriLop = timMaLop_LTC(DSLTC, maLop);
+			if (viTriLop != -1)
+			{
+				xuatDSTheoTrang_Diem(DSLTC.LopTC[viTriLop]->DSDK, DSLSV);
+			}
+			else cout << "\nKhong tim thay ma lop";
+			system("pause");*/
+			init_View();
+			sapXep_LTC(DSLTC, DSMH);
+			chon_LTC(DSLTC, DSMH, DSLSV, 5);
+			_getch();
+			break;
+		}
+		case 27:
+		{
+			system("cls");
+			/*string TENLOP;
+			cout << "\nNhap ten lop: ";
+			cin.ignore();
+			getline(cin, TENLOP);
+			if (timMaLop_LSV(DSLSV, TENLOP) != -1)
+				xuatDSDiemTB_SV(DSSV, DSLTC, TENLOP);
+			else cout << "\nKhong tim thay ma lop";
+			system("pause");*/
+			init_View();
+			chon_LSV(DSLSV, DSLTC,DSMH, 5);
+			_getch();
+			break;
+		}
+		case 28:
+		{
+			system("cls");
+			/*string TENLOP;
+			cout << "\nNhap ten lop: ";
+			cin.ignore();
+			getline(cin, TENLOP);
+			if (timMaLop_LSV(DSLSV, TENLOP) != -1)
+				xuatDSDiemTK_SV(DSSV, DSLTC, TENLOP);
+			else cout << "\nKhong tim thay ma lop";
+			system("pause");*/
+			init_View();
+			chon_LSV(DSLSV, DSLTC, DSMH, 6);
+			_getch();
+			break;
+		}
+		case 29:
+		{
+			loadData_LSV(DSLSV);
+			break;
+		}
+		case 0:
+		{
+			//for (int i = 0; i < DSLTC.n; i++) free_DK(DSLTC.LopTC[i]->DSDK);
+			saveFile_MH(DSMH);
+			saveFile_LTC(DSLTC);
+			saveFile_LSV(DSLSV);
+			saveFile_SV(DSLSV);
+			saveFile_DK(DSLTC);
+			free_MH(DSMH);
+			free_SV(DSSV);
+			freeDS_LTC(DSLTC);
+			exit(0);
+			break;
+		}
+		default:
+			break;
+		}
+	
+	}
+}

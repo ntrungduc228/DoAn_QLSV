@@ -1,0 +1,42 @@
+INT1154,Tin hoc co so 1,2,3
+INT1157,Tin hoc co so 2,2,2
+INT1156,Tin hoc co so 3,2,2
+INT1303,An toan va bao mat he thong,2,1
+INT1306,Cau truc du lieu va giai thuat,3,2
+INT1313,Co so du lieu,1,2
+INT1319,He dieu hanh,1,3
+INT1330,Ky thuat vi xu ly,3,2
+INT1332,Lap trinh huong doi tuong,2,2
+INT1336,Mang may tinh,3,4
+INT1340,Nhap mon cong nghe phan mem,4,2
+INT1427,Kien truc va thiet ke phan mem,3,2
+INT1433,Lap trinh mang,2,4
+INT1434,Lap trinh web,4,1
+INT1450,Quan ly du an phan mem,3,2
+TEL1401,An toan mang thong tin,3,1
+INT1528,Nhap mon tri tue nhan tao,2,3
+INT1360,Dao duc trong CNTT,2,0
+BAS1201,Dai so,3,0
+BAS1203,Giai tich 1,3,0
+BAS1204,Giai tich 2,3,0
+INT1358,Toan roi rac 1,3,0
+INT1359,Toan roi rac 2,3,0
+BAS1124,Vat ly 1 va thi nghiem,2,2
+BAS1225,Vat ly 2 va thi nghiem,2,2
+BAS1227,Vat ly 3 va thi nghiem,2,2
+BAS1105,Giao duc quoc phong va an ninh,8,8
+BAS1106,Giao duc the chat 1,2,2
+BAS1150,Triet hoc Mac - Lenin,2,0
+BAS1226,Xac suat thong ke,2,2
+BAS1151,Kinh te chinh tri Mac - Lenin,2,2
+BAS1152,Chu nghia xa hoi khoa hoc,2,2
+BAS1143,Tieng anh A2.1,2,1
+BAS1141,Tieng anh A1.1,3,3
+ELE1433,Ky thuat so,2,2
+INT1339,Ngon ngu lap trinh C++,3,3
+INT1358,Toan roi rac 1,3,3
+BAS1122,Tu tuong Ho Chi Minh,2,2
+BAS1142,Tieng anh A1.2,4,4
+BAS1145,Tieng anh B1.1,3,3
+BAS1102,Duong loi cach mang Dang cong san VN,3,3
+INT1359,Toan roi rac 2,3,3
